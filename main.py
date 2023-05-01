@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     random_num = random.randint(1, 1000)
-    name = ["Ryan", "James", "Greg", "Jan"]
+    name = ["Ryan", "James", "Greg", "Jan", "June"]
     chosen_name = random.choice(name)
     return render_template('index.html', random_num=random_num, name=chosen_name)
 
