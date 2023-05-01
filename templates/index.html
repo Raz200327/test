@@ -3,10 +3,26 @@
 
 <head>
 <title>Test Website</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier-Prime|Montserrat|Poppins">
+<style>
+
+.title {
+    font-family: "Montserrat";
+}
+
+.sub-heading {
+    font-family: "Poppins"; 
+}
+
+.nums {
+    font-family: "Courier Prime";
+}
+
+</style>
 </head>
 <body>
-<h1>Hello {{name}}</h1>
-<h2>Here's a random number: {{random_num}}</h2>
-<h3>This is a flask web app.</h3>
+<h1 class="title">Hello {{name}}</h1>
+<h2 class="sub-heading">Here's a random number:</h2><h2 class="nums">{{random_num}}</h2>
+<h3 class="sub-heading">This is a flask web app.</h3>
 </body>
 </html>
